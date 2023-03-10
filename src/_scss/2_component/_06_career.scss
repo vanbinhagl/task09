@@ -1,0 +1,238 @@
+.c-career {
+    padding-top: 8.2%;
+
+    .c-career__head {
+        max-width: 880px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .c-career__title {
+        line-height: 1.4;
+        padding-bottom: 2.8%;
+    }
+
+    .c-career__mission {
+        padding-bottom: 56.16666667%;
+        background: url("./assets/img/career-bg.jpg") no-repeat;
+        background-size: cover;
+        margin-top: 8.5%;
+    }
+
+    .c-career__inner,
+    .c-career__benefitcontainer {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .c-career__innertitle {
+        line-height: 1.2;
+        letter-spacing: 0.9px;
+        padding-bottom: 20px;
+    }
+
+    .c-career__innerdesc {
+        .c-desc {
+            line-height: 1.85;
+            letter-spacing: 0.6px;
+        }
+
+        .c-career__innerdesc--fixpp {
+            letter-spacing: 1.5px;
+            font-feature-settings: "palt";
+        }
+    }
+
+    .c-career__innercontent {
+        position: absolute;
+        left: 10%;
+        top: 96px;
+        max-width: 490px;
+        background-color: #fff;
+        padding: 3.5% 2.083333333% 2.6% 3%;
+    }
+
+    .c-career__plan {
+        position: relative;
+        margin-top: 6.2%;
+        padding-bottom: 11.2%;
+
+        &::before {
+            position: absolute;
+            content: "";
+            right: calc(((100% - 1200px) / 2) + 279px);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #f8f8f8;
+            z-index: -1;
+        }
+    }
+
+    .c-career__plancontainer {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .c-career__plancontent {
+        margin-left: 10%;
+        padding-top: 7%;
+    }
+
+    .c-career__plantitle {
+        letter-spacing: 0.82px;
+    }
+
+    .c-career__planlist {
+        margin-left: 3.7%;
+        margin-top: 2.5%;
+    }
+
+    .c-career__planitem {
+        margin-bottom: 10px;
+
+        &.c-career__planitem--spacing {
+            margin-top: 14px;
+        }
+    }
+
+    .c-career__itemtitle {
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        color: #0080cc;
+    }
+    
+    .c-career__itemcontent {
+        padding: 13px 0 13px 8.5%;
+        border-left: 1px solid #0080cc;
+        margin-left: 4.9%;
+        margin-top: 11px;
+
+        &.c-career__itemcontent--spacing {
+            margin-top: 6px;
+        }
+    }
+
+    .c-career__itemtext {
+        max-width: 557px;
+        width: 100%;
+        font-size: 1.6rem;
+        letter-spacing: 0.38px;
+        line-height: 1.7;
+        color: #0080cc;
+    }
+
+    .c-career__itemtext--spacing {
+        margin-top: 30px;
+        max-width: 555px;
+    }
+
+    .c-plan__footer {
+        max-width: 650px;
+        width: 100%;
+        margin-left: 16.583333%;
+        position: relative;
+        margin-top: 5.4%;
+    }
+
+    .c-plan__leftborder,
+    .c-plan__rightborder {
+        position: absolute;
+    }
+
+    .c-plan__leftborder {
+        top: -28%;
+        left: 0;
+    }
+
+    .c-plan__rightborder {
+        right: -2px;
+        bottom: -40%;
+    }
+
+    .c-plan__footertitle {
+        font-size: 2.5rem;
+        color: #ff5800;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .c-career__benefit {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: calc(((100% - 1200px) / 2) + 120px);
+            z-index: -1;
+            background-color: #fdfbef;
+        }
+    }
+
+    .c-career__benefitcontent {
+        margin-left: 10%;
+        display: flex;
+    }
+
+    .c-benefit__imglist {
+        flex-basis: auto;
+        max-width: 400px;
+    }
+
+    .c-benefit__imgitem:first-child {
+        max-height: 238px;
+    }
+
+    .c-career__benefitmain {
+        flex-basis: auto;
+        max-width: 560px;
+        margin-left: 3.703704%;
+    }
+
+    .c-career__benefitdetail {
+        margin-top: 15.5%;
+    }
+    
+    .c-benefit__item {
+        font-size: 1.8rem;
+        position: relative;
+
+        .c-benefit__itemcontent {
+            line-height: 1.6;
+            letter-spacing: 0.54px;
+        }
+
+        .c-benefit__itemnote {
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: 0.38px;
+            color: #3c3c3c;
+            margin-left: 20px;
+            margin-top: 14px;
+            margin-bottom: 5px;
+
+            &.c-benefit__itemnote--lineheight {
+                line-height: 1.75;
+            }
+        }
+    
+        .c-benefit__itemdot {
+            font-size: 1rem;
+        }
+    }
+
+    .c-career__benefitage {
+        margin-top: 8%;
+    }
+
+}

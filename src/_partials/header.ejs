@@ -1,0 +1,29 @@
+<header class="c-header">
+  <h1 class="c-header__logo">
+    <a href="./index.html">
+      <img src="/assets/img/logo.png" alt="Entex">
+    </a>
+  </h1>
+  <div class="c-header__nav"> 
+    <div class="c-header__menuicon">
+      <img src="./assets/img/menu.svg" alt="menu icon open">
+      <img src="./assets/img/close.svg" alt="menu icon close">
+    </div>
+    <nav>
+      <ul class="c-gnav">
+        <% if (typeof linklists != 'undefined') { %>
+          <% linklists.main && linklists.main.forEach(link => { %>
+            <li class="c-header__menuitem">
+              <a <% if (link.current || link.active) { %>class="c-header__menulink is-active"<% } else { %> class="c-header__menulink" <% } %> href="<%= link.url %>"><%= link.title %></a>
+            </li>
+          <% }) %>
+        <% } %>
+      </ul>
+    </nav>
+
+    <a class="c-header__recruitbtn" href="#recruit">
+      <img class="c-header__recruiticon" src="./assets/img/assignment.svg" alt="assignment icon">
+      <span class="c-header__recruittxt" >募集要項</span>
+    </a>
+  </div>
+</header>

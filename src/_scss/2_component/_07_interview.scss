@@ -1,0 +1,40 @@
+.c-interview {
+    padding-top: 7.7%;
+
+    .c-interview__head {
+        text-align: center;
+        margin-bottom: 5.7%;
+
+        .c-title {
+            line-height: 1.5;
+        }
+    }
+    
+    .c-interview__manager {
+        background: #0080cc;
+        margin-top: 11.8%;
+        color: #fff;
+    }
+
+    .c-interview__managercontent {
+        padding-top: 8.8%;
+    }
+
+    .c-interview__bodytop {
+        display: flex;
+    }
+
+    .c-interview__bodytext {
+        max-width: 630px;
+        flex-basis: auto;
+        font-size: 1.6rem;
+        letter-spacing: 0.38px;
+        margin-right: 5.3%;
+    }
+
+    .c-interview__managerstated {
+        font-size: 2.4rem;
+        letter-spacing: 0.58px;
+        font-weight: 500;
+    }
+}

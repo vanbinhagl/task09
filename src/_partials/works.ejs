@@ -1,0 +1,123 @@
+<section class="c-work">
+    <h2 class="c-work__maintitle c-title">私たちの仕事</h2>
+    <div class="c-work__desc  c-desc">
+        <p>エクステリアのプロ集団と言っても、仕事内容はさまざまです。 </p>
+        <p>仕事をしていく上で、「あなたの興味のあること」「向いていること」が見つけられるかもしれません。</p>
+    </div>
+
+    <div class="c-work__intro">
+        <div class="c-work__container">
+            <div class="c-work__introcontent">
+                <div class="c-work__image">
+                    <div class="c-work__imgitem">
+                        <img src="./assets/img/work1.jpg" alt="私たちの仕事">
+                    </div>
+                    <div class="c-work__imgitem">
+                        <img src="./assets/img/work2.jpg" alt="私たちの仕事">
+                    </div>
+                    <div class="c-work__imgitem">
+                        <img src="./assets/img/work3.jpg" alt="私たちの仕事">
+                    </div>
+                    <div class="c-work__imgitem">
+                        <img src="./assets/img/work4.jpg" alt="私たちの仕事">
+                    </div>
+                </div>
+                <div class="c-work__content">
+                    <h3 class="c-work__introtitle c-title">仕事内容の紹介</h3>
+                    <p class="c-work__introdesc c-desc">屋外での現場作業をメインに行ないます。</p>
+                    <div class="c-work__list">
+
+                        <% works.forEach(element=> { %>
+                            <div <% if (element.id==="2" ) { %>
+                                class="c-work__item c-work__item--fixpp"
+                                <% } else { %> class="c-work__item" <% } %>
+                                        >
+                                        <div class="c-work__itemnum">
+                                            <%= element.id %>
+                                        </div>
+                                        <div <% if (element.id==="1" ) { %>
+                                            class="c-work__itemtext c-work__itemtext--fixpp"
+                                            <% } else if (element.id==="2" ) { %> class="c-work__itemtext
+                                                c-work__item--fixspacing"<% } else{ %>class="c-work__itemtext"<% } %>
+                                                        >
+                                                        <%= element.content %>
+                                        </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video -->
+    <div class="c-work__about">
+        <div class="c-work__abouthead">
+            <h3 class="c-title">Photos & Movie</h3>
+            <p class="c-desc">私たちの仕事内容の一部を動画と写真でお伝えします。</p>
+        </div>
+        <div class="c-work__aboutbot">
+            <div class="c-work__video">
+                <video class="c-work__videocontent" src="./assets/img/works/entex_video.mp4" type="video/mp4" autoplay
+                    loop muted ></video>
+            </div>
+            <div class="c-work__aboutimage">
+                <div class="c-work__imglist">
+                    <div class="c-work__aboutimg">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork1-sp.jpg">
+                            <img src="./assets/img/works/aboutwork1.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
+                        </picture>
+                    </div>
+                    <div class="c-work__aboutimg">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork2-sp.jpg">
+                            <img src="./assets/img/works/aboutwork2.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
+                        </picture>
+                    </div>
+                </div>
+                <div class="c-work__imglist">
+                    <div class="c-work__aboutimg">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork3-sp.jpg">
+                            <img src="./assets/img/works/aboutwork3.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
+                        </picture>
+                    </div>
+                    <div class="c-work__aboutimg">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork4-sp.jpg">
+                            <img src="./assets/img/works/aboutwork4.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
+                        </picture>
+                    </div>
+                </div>
+                <div class="c-work__imglist">
+                    <div class="c-work__aboutimg">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork5-sp.jpg">
+                            <img src="./assets/img/works/aboutwork5.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
+                        </picture>
+                    </div>
+                    <div class="c-work__aboutimg">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork6-sp.jpg">
+                            <img src="./assets/img/works/aboutwork6.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
+                        </picture>
+                    </div>
+                </div>
+                <div class="c-work__imglist">
+                    <div class="c-work__aboutimg">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork7-sp.jpg">
+                            <img src="./assets/img/works/aboutwork7.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
+                        </picture>
+                    </div>
+                    <div class="c-work__aboutimg">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork8-sp.jpg">
+                            <img src="./assets/img/works/aboutwork8.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

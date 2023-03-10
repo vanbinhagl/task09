@@ -1,0 +1,57 @@
+.c-about {
+    background: linear-gradient(to right, #0080cc 76.75%, #fff 76.75% 100%);
+    
+    .c-about__container {
+        padding: 100px 60px 78px;
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .c-about__text {
+        padding-left: 60px;
+        margin-right: 64px;
+        max-width: 475px;
+        width: 100%;
+        flex: 1;
+    }
+
+    .c-about__title {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.52px;
+        color: #fff;
+        line-height: 2.2;
+        margin-bottom: 11px;
+    }
+
+    .c-about__pragraph {
+        font-size: 1.6rem;
+        color: #fff;
+        letter-spacing: 0.38px;
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+
+    .c-about__image {
+        flex: 1;
+        text-align: right;
+    }
+
+    .c-about__imgbox { 
+        margin-bottom: 44px;
+        position: relative;
+    }
+
+    .c-about__imgborder {
+        position: absolute;
+        max-width: 540px;
+        width: 100%;
+        height: 100%;
+        min-height: 359px;
+        top: 19px;
+        left: -19px;
+        border: 2px solid #fff;
+    }
+}
