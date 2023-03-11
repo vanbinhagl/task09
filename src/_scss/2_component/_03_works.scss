@@ -154,5 +154,50 @@
         max-height: 120px;
         margin-left: 15px;
         margin-bottom: 25px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            cursor: pointer;
+
+            &::before {
+                opacity: 1;
+            }
+
+            .c-work__imglayer {
+                top: 50%;
+                z-index: 3;
+            }
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #fff , $alpha: 0.6);
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+        }
+
+        .c-work__imglayer {
+            position: absolute;
+            text-align: center;
+            top: 150%;
+            left: 50%;
+            color: #005384;
+            transform: translate(-50%, -50%);
+            transition: 0.3s ease-in-out;
+        }
+
+        .c-work__layertitle {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 0.43px;
+            line-height: 1.1;
+            margin-top: 3px;
+        }
     }
 }

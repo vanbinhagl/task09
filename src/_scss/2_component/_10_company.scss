@@ -1,0 +1,62 @@
+.c-company {
+    padding-top: 6.6%;
+
+    .c-company__wrapper {
+        margin-top: 39px;
+    }
+
+    .c-company__table,
+    .c-company__tablehead,
+    .c-company__tabletext {
+        border: 1px solid #cbcbcb;
+    }
+
+    .c-company__table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 1.6rem;
+        letter-spacing: 0.38px;
+        text-align: left;
+    }
+      
+    .c-company__tablehead {
+        width: 30%;
+        background: #f7f7f7;
+        vertical-align: top;
+        font-weight: 400;
+        padding: 19px 0 18px 17px;
+    }
+
+    .c-company__tabletext {
+        padding: 19px 27px 18px 17px;
+    }
+
+    // perfect pixel
+
+    .c-company__tabletextbusiness {
+        line-height: 1.9;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .c-company__tabletextbank {
+        line-height: 1.7;
+        padding-top: 15px;
+    }
+
+    .c-company__tablerowarchitect {
+        .c-company__tablehead {
+            padding-bottom: 12px;
+        }
+  
+        .c-company__tabletext {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+
+    .c-company__tabletextqualified {
+        line-height: 1.85;
+        padding-top: 12px;
+    }
+}

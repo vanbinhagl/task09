@@ -1,0 +1,147 @@
+.c-recruit {
+    padding-top: 6.6%;
+
+    .c-recruit__wrapper {
+        margin-top: 5.6%;
+    }
+
+    .c-recruit__tabheader {
+        align-items: flex-end;
+    }
+
+    .c-recruit__tab {
+        font-size: 2.6rem;
+        font-weight: 400;
+        letter-spacing: 0.62px;
+        color: #3c3c3c;
+        text-align: center;
+
+        &.c-recruit__tab--bgblue.is-active {
+            background-color: #0080cc;
+            border: 1px solid #0080cc;
+            padding-left: 0;
+        }
+
+        &.c-recruit__tab--bgblack.is-active {
+            background-color: #3c3c3c;
+            border: 1px solid #3c3c3c;
+            padding-right: 0;
+        }
+
+        &.c-recruit__tab--bgblack,
+        &.c-recruit__tab--bgblue {
+            width: 46.25%;
+        }
+          
+        &.c-recruit__tab--bgblack {
+            border: 1px solid #404141;
+            border-top-right-radius: 20px;
+            padding: 23px 33px 8px 0;
+            border-bottom: 0;
+            border-left: 0;
+        }
+
+        &.c-recruit__tab--bgblue {
+            border: 1px solid #0080cc;
+            color: #0080cc;
+            border-top-left-radius: 20px;
+            padding: 23px 0 8px 33px;
+            border-bottom: 0;
+            border-right: 0;
+        }
+
+        &.is-active {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            width: 53.75%;
+            padding-top: 30px;
+            padding-bottom: 10px;
+            color: #fff;
+        }
+    }
+
+    .c-recruit__tabcontent {
+        padding: 44px 37px 57px;
+      
+        &.c-recruit__tabcontent--blue {
+            border: 3px solid #0080cc;
+            display: none;
+        }
+
+        &.c-recruit__tabcontent--black {
+            border: 3px solid #3c3c3c;
+            display: none;
+        }
+
+        &.c-recruit__tabcontent--black.is-show,
+        &.c-recruit__tabcontent--blue.is-show {
+            display: block;
+        }
+    }
+
+    .c-recruit__tableblue {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .c-recruit__tablehead {
+        border-bottom: 3px solid #0080cc;
+
+        &.c-recruit__tablehead--black {
+            border-color: #3c3c3c;
+        }
+    }
+
+    .c-recruit__tablebody {
+        border-bottom: 1px solid #707070;
+    }
+
+    .c-recruit__tableheading {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.48px;
+        padding: 18px 0 16px 60px;
+        width: 29%;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .c-recruit__tabletext {
+        font-size: 1.6rem;
+        letter-spacing: 0.38px;
+        font-weight: 400;
+
+        &.c-recruit__tabletext--fixspace {
+            padding-top: 18px;
+            line-height: 1.8;
+            padding-bottom: 14px;
+            padding-right: 40px;
+        }
+    }
+
+    .c-recruit__tableaction {
+        max-width: 742px;
+        margin: 31px auto 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-recruit__tablebtn {
+        display: inline-flex;
+        background-color: #0080cc;
+        max-width: 353px;
+        font-size: 2.2rem;
+        color: #fff;
+        letter-spacing: 0.53px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9px;
+        width: 353px;
+        padding: 11px 0;
+    }
+
+    .c-recruit__tablebtnicon {
+        margin-right: 12px;
+        transform: translateX(-18px);
+    }
+}

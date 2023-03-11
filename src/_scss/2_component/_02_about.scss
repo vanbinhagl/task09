@@ -1,8 +1,21 @@
 .c-about {
-    background: linear-gradient(to right, #0080cc 76.75%, #fff 76.75% 100%);
-    
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: #0080cc;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: calc(((100% - 1200px) / 2) + 279px);
+        z-index: -1;
+        pointer-events: none;
+    }
+
+
     .c-about__container {
-        padding: 100px 60px 78px;
+        padding: 107px 60px 78px;
         display: flex;
         max-width: 1200px;
         width: 100%;

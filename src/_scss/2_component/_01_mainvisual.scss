@@ -1,9 +1,3 @@
-/*------------------------------------------------------------
-c-mainvisual
-------------------------------------------------------------*/
-
-/*
-------------------------------------------------------------*/
 .c-mainvisual {
     position: relative;
     padding-top: 80px;
@@ -38,19 +32,16 @@ c-mainvisual
         }
 
         .c-mainvisual__item3 {
-            animation: lefttoright 50s linear;
-            animation-fill-mode: backwards;
-
+            animation: lefttoright 50s linear backwards;
         }
     }
 
     .c-mainvisual__item {
-        .c-mainvisual__item {
-            background-size: cover;
-            background-repeat: no-repeat;
+        .c-mainvisual__itemimg {
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
             height: 100%;
             width: 100%;
-     
         }
 
         .c-mainvisual__item1 {
@@ -76,7 +67,7 @@ c-mainvisual
         position: absolute;
         max-width: 1200px;
         width: 100%;
-        bottom: 0;
+        bottom: -6px;
         left: 50%;
         transform: translateX(-50%);
     }

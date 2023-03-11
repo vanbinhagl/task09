@@ -1,4 +1,4 @@
-<section class="c-work">
+<section class="c-work" id="works">
     <h2 class="c-work__maintitle c-title">私たちの仕事</h2>
     <div class="c-work__desc  c-desc">
         <p>エクステリアのプロ集団と言っても、仕事内容はさまざまです。 </p>
@@ -30,20 +30,18 @@
                         <% works.forEach(element=> { %>
                             <div <% if (element.id==="2" ) { %>
                                 class="c-work__item c-work__item--fixpp"
-                                <% } else { %> class="c-work__item" <% } %>
-                                        >
+                                <% } else { %> class="c-work__item" <% } %>>
                                         <div class="c-work__itemnum">
                                             <%= element.id %>
                                         </div>
                                         <div <% if (element.id==="1" ) { %>
                                             class="c-work__itemtext c-work__itemtext--fixpp"
                                             <% } else if (element.id==="2" ) { %> class="c-work__itemtext
-                                                c-work__item--fixspacing"<% } else{ %>class="c-work__itemtext"<% } %>
-                                                        >
+                                                c-work__item--fixspacing"<% } else{ %>class="c-work__itemtext"<% } %>>
                                                         <%= element.content %>
                                         </div>
-                            </div>
-                            <% }) %>
+                            </div><% }) %>
+
                     </div>
                 </div>
             </div>
@@ -67,12 +65,20 @@
                             <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork1-sp.jpg">
                             <img src="./assets/img/works/aboutwork1.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
                         </picture>
+                        <div class="c-work__imglayer">
+                            <img src="./assets/img/zoom_in.svg" alt="zoom in">
+                            <p class="c-work__layertitle">PICK UP</p>
+                        </div>
                     </div>
                     <div class="c-work__aboutimg">
                         <picture>
                             <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork2-sp.jpg">
                             <img src="./assets/img/works/aboutwork2.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
                         </picture>
+                        <div class="c-work__imglayer">
+                            <img src="./assets/img/zoom_in.svg" alt="zoom in">
+                            <p class="c-work__layertitle">PICK UP</p>
+                        </div>
                     </div>
                 </div>
                 <div class="c-work__imglist">
@@ -81,12 +87,20 @@
                             <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork3-sp.jpg">
                             <img src="./assets/img/works/aboutwork3.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
                         </picture>
+                        <div class="c-work__imglayer">
+                            <img src="./assets/img/zoom_in.svg" alt="zoom in">
+                            <p class="c-work__layertitle">PICK UP</p>
+                        </div>
                     </div>
                     <div class="c-work__aboutimg">
                         <picture>
                             <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork4-sp.jpg">
                             <img src="./assets/img/works/aboutwork4.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
                         </picture>
+                        <div class="c-work__imglayer">
+                            <img src="./assets/img/zoom_in.svg" alt="zoom in">
+                            <p class="c-work__layertitle">PICK UP</p>
+                        </div>
                     </div>
                 </div>
                 <div class="c-work__imglist">
@@ -95,12 +109,20 @@
                             <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork5-sp.jpg">
                             <img src="./assets/img/works/aboutwork5.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
                         </picture>
+                        <div class="c-work__imglayer">
+                            <img src="./assets/img/zoom_in.svg" alt="zoom in">
+                            <p class="c-work__layertitle">PICK UP</p>
+                        </div>
                     </div>
                     <div class="c-work__aboutimg">
                         <picture>
                             <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork6-sp.jpg">
                             <img src="./assets/img/works/aboutwork6.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
                         </picture>
+                        <div class="c-work__imglayer">
+                            <img src="./assets/img/zoom_in.svg" alt="zoom in">
+                            <p class="c-work__layertitle">PICK UP</p>
+                        </div>
                     </div>
                 </div>
                 <div class="c-work__imglist">
@@ -109,12 +131,20 @@
                             <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork7-sp.jpg">
                             <img src="./assets/img/works/aboutwork7.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
                         </picture>
+                        <div class="c-work__imglayer">
+                            <img src="./assets/img/zoom_in.svg" alt="zoom in">
+                            <p class="c-work__layertitle">PICK UP</p>
+                        </div>
                     </div>
                     <div class="c-work__aboutimg">
                         <picture>
                             <source media="(max-width: 768px)" srcset="./assets/img/works/aboutwork8-sp.jpg">
                             <img src="./assets/img/works/aboutwork8.jpg" alt="私たちの仕事内容の一部を動画と写真でお伝えします。">
                         </picture>
+                        <div class="c-work__imglayer">
+                            <img src="./assets/img/zoom_in.svg" alt="zoom in">
+                            <p class="c-work__layertitle">PICK UP</p>
+                        </div>
                     </div>
                 </div>
             </div>

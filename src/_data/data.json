@@ -3,23 +3,23 @@
     "main": [
       {
         "title": "私たちについて",
-        "url": "#"
+        "url": "#about"
       },
       {
         "title": "私たちの仕事",
-        "url": "#"
+        "url": "#works"
       },
       {
         "title": "キャリアプラン",
-        "url": "#"
+        "url": "#career"
       },
       {
         "title": "社員インタビュー",
-        "url": "#"
+        "url": "#interview"
       },
       {
         "title": "会社情報",
-        "url": "#"
+        "url": "#company"
       }
     ]
   },
