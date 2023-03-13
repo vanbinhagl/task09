@@ -29,6 +29,10 @@
 
     .c-company__tabletext {
         padding: 19px 27px 18px 17px;
+
+        &.c-company__tabletext--tabnsp {
+            display: none;
+        }
     }
 
     // perfect pixel

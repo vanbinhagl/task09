@@ -9,6 +9,10 @@
     overflow: scroll;
     display: none;
 
+    &.show {
+        display: block;
+    }
+
     #message-1,
     #message-2,
     #message-3 {
@@ -37,6 +41,7 @@
         flex-direction: column;
         align-items: flex-end;
         background: #fff;
+        animation: scale-in-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
 
     .c-message__content {
@@ -122,3 +127,5 @@
         }
     }
 }
+
+@include scaleCenter;

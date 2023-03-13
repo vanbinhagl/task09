@@ -12,27 +12,19 @@
         }
     }
 
-    .slick-slide {
+    .slick-animated {
         .c-mainvisual__item1 {
-            transform: scale(1);
-            transition: all 10s ease-in-out;
-
-        }
-    }
-
-    .slick-active {
-        .c-mainvisual__item1 {
-            transform: scale(1.2);
+            animation: imageZoomIn 10s ease-in-out;
         }
 
         .c-mainvisual__item2 {
-            animation: toptobottom 50s linear;
+            animation: toptobottom 50s ease-in-out;
             animation-fill-mode: backwards;
 
         }
 
         .c-mainvisual__item3 {
-            animation: lefttoright 50s linear backwards;
+            animation: lefttoright 50s ease-in-out backwards;
         }
     }
 
@@ -46,14 +38,17 @@
 
         .c-mainvisual__item1 {
             background: url(./assets/img/mainvisual1.jpg);
+            opacity: 0;
         }
 
         .c-mainvisual__item2 {
             background: url(./assets/img/mainvisual2.jpg);
+            opacity: 0;
         }
 
         .c-mainvisual__item3 {
             background: url(./assets/img/mainvisual3.jpg);
+            opacity: 0;
         }
     }
 
@@ -67,7 +62,7 @@
         position: absolute;
         max-width: 1200px;
         width: 100%;
-        bottom: -6px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -145,6 +140,11 @@
 @keyframes toptobottom {
     0% {
         transform: scale(1.3) translateY(0);
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
     }
 
     10% {
@@ -175,7 +175,12 @@
 
 @keyframes lefttoright {
     0% {
+        opacity: 0;
         transform: scale(1.3) translatex(0);
+    }
+
+    1% {
+        opacity: 1;
     }
 
     10% {
@@ -201,5 +206,21 @@
     100% {
         transform: scale(1.3) translatex(100%);
         transition: transform 6s ease-out;
+    }
+}
+
+@keyframes imageZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.25);
     }
 }

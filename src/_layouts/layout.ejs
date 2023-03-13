@@ -10,6 +10,7 @@
       <%= (typeof title != "undefined" ? title : "Page title") %>
     </title>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" >
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     {{ meta }}
@@ -27,6 +28,7 @@
     <%- include('_partials/modalMessage'); -%>
 
     {{ script }}
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="/assets/js/main.js"></script>
   </body>
 </html>
