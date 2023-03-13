@@ -12,19 +12,19 @@
         }
     }
 
-    .slick-animated {
+    .slick-active {
         .c-mainvisual__item1 {
-            animation: imageZoomIn 10s ease-in-out;
+            animation: imageZoomIn 10s linear backwards;
         }
 
         .c-mainvisual__item2 {
-            animation: toptobottom 50s ease-in-out;
+            animation: toptobottom 50s linear;
             animation-fill-mode: backwards;
 
         }
 
         .c-mainvisual__item3 {
-            animation: lefttoright 50s ease-in-out backwards;
+            animation: lefttoright 50s linear backwards;
         }
     }
 
@@ -38,17 +38,14 @@
 
         .c-mainvisual__item1 {
             background: url(./assets/img/mainvisual1.jpg);
-            opacity: 0;
         }
 
         .c-mainvisual__item2 {
             background: url(./assets/img/mainvisual2.jpg);
-            opacity: 0;
         }
 
         .c-mainvisual__item3 {
             background: url(./assets/img/mainvisual3.jpg);
-            opacity: 0;
         }
     }
 
@@ -77,7 +74,7 @@
 
     .c-mainvisual__title {
         position: absolute;
-        top: -479%;
+        top: -488%;
         left: 0;
         max-width: 440px;
     }
@@ -92,6 +89,10 @@
         padding: 0 9px;
         margin-bottom: 16px;
         line-height: 1.4;
+
+        &.c-title__item--fixpd {
+            padding-right: 0;
+        }
 
         &.c-title__item--fixspacing {
             font-feature-settings: "palt";
@@ -108,6 +109,10 @@
         left: 50%;
         top: -57px;
         transform: translateX(-50%);
+
+        &:hover {
+            cursor: pointer;
+        }
 
         &::before {
             content: "";
@@ -127,8 +132,8 @@
         color: #0080cc;
         font-weight: 500;
         text-align: center;
-        padding-top: 27px;
-        padding-bottom: 16px;
+        padding-top: 33px;
+        padding-bottom: 22px;
         letter-spacing: 1.92px;
 
         .c-mainvisual__caption--strong {
@@ -139,12 +144,8 @@
 
 @keyframes toptobottom {
     0% {
-        transform: scale(1.3) translateY(0);
         opacity: 0;
-    }
-
-    1% {
-        opacity: 1;
+        transform: scale(1.3) translateY(0);
     }
 
     10% {
@@ -179,10 +180,6 @@
         transform: scale(1.3) translatex(0);
     }
 
-    1% {
-        opacity: 1;
-    }
-
     10% {
         opacity: 1;
         transform: scale(1.3) translatex(3%);
@@ -215,7 +212,7 @@
         transform: scale(1);
     }
 
-    5% {
+    10% {
         opacity: 1;
     }
 

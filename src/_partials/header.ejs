@@ -14,7 +14,7 @@
           <% if (typeof linklists != 'undefined') { %>
             <% linklists.main && linklists.main.forEach(link => { %>
               <li class="c-header__menuitem">
-                <a <% if (link.current || link.active) { %>class="c-header__menulink active"<% } else { %> class="c-header__menulink" <% } %> href="<%= link.url %>"><%= link.title %></a>
+                <a class="c-header__menulink"  href="<%= link.url %>"><%= link.title %></a>
               </li>
             <% }) %>
           <% } %>

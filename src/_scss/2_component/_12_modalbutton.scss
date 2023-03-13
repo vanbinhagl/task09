@@ -9,6 +9,10 @@
     font-size: 1.6rem;
     letter-spacing: 1.98px;
 
+    &.c-modalbtn--right {
+        margin-right: 56px;
+    }
+
     &:hover {
         cursor: pointer;
         opacity: 0.7;

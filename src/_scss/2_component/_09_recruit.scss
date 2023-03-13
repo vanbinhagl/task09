@@ -1,8 +1,12 @@
 .c-recruit {
-    padding-top: 6.6%;
+    padding-top: 7.6%;
+
+    .c-recruit__title {
+        margin-bottom: 5px;
+    }
 
     .c-recruit__wrapper {
-        margin-top: 5.6%;
+        margin-top: 6.1%;
     }
 
     .c-recruit__tabheader {
@@ -15,6 +19,7 @@
         letter-spacing: 0.62px;
         color: #3c3c3c;
         text-align: center;
+        cursor: pointer;
 
         &.c-recruit__tab--bgblue.is-active {
             background-color: #0080cc;
@@ -36,7 +41,7 @@
         &.c-recruit__tab--bgblack {
             border: 1px solid #404141;
             border-top-right-radius: 20px;
-            padding: 23px 33px 8px 0;
+            padding: 31px 33px 13px 0;
             border-bottom: 0;
             border-left: 0;
         }
@@ -55,7 +60,7 @@
             border-top-left-radius: 10px;
             width: 53.75%;
             padding-top: 30px;
-            padding-bottom: 10px;
+            padding-bottom: 23px;
             color: #fff;
         }
     }
@@ -86,7 +91,7 @@
     }
 
     .c-recruit__tablehead {
-        border-bottom: 3px solid #0080cc;
+        border-bottom: 5px solid #0080cc;
 
         &.c-recruit__tablehead--black {
             border-color: #3c3c3c;
@@ -101,28 +106,30 @@
         font-size: 2rem;
         font-weight: 600;
         letter-spacing: 0.48px;
-        padding: 18px 0 16px 60px;
+        padding: 16px 0 16px 60px;
         width: 29%;
         text-align: left;
         vertical-align: top;
+        color: #0b0b0b;
     }
 
     .c-recruit__tabletext {
         font-size: 1.6rem;
         letter-spacing: 0.38px;
         font-weight: 400;
+        color: #0b0b0b;
 
         &.c-recruit__tabletext--fixspace {
-            padding-top: 18px;
+            padding-top: 16px;
             line-height: 1.8;
-            padding-bottom: 14px;
+            padding-bottom: 16px;
             padding-right: 40px;
         }
     }
 
     .c-recruit__tableaction {
         max-width: 742px;
-        margin: 31px auto 0;
+        margin: 32px auto 0;
         display: flex;
         justify-content: space-between;
     }
@@ -138,11 +145,19 @@
         align-items: center;
         border-radius: 9px;
         width: 353px;
-        padding: 11px 0;
+        padding: 16px 0;
+        transition: 0.3s ease-in;
+
+        &:hover {
+            background-color: #005384;
+        }
     }
 
     .c-recruit__tablebtnicon {
         margin-right: 12px;
         transform: translateX(-18px);
+    }
+    .c-recruit__tablebtnicon--fixspacing {
+        margin-right: 6px;
     }
 }

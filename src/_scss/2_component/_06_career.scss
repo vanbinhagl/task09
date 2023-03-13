@@ -80,7 +80,7 @@
 
     .c-career__plancontent {
         margin-left: 10%;
-        padding-top: 7%;
+        padding-top: 7.8%;
     }
 
     .c-career__plantitle {
@@ -89,14 +89,14 @@
 
     .c-career__planlist {
         margin-left: 3.7%;
-        margin-top: 2.5%;
+        margin-top: 3.8%;
     }
 
     .c-career__planitem {
-        margin-bottom: 10px;
+        margin-bottom: 19px;
 
         &.c-career__planitem--spacing {
-            margin-top: 14px;
+            margin-top: 21px;
         }
     }
 
@@ -111,10 +111,10 @@
         padding: 13px 0 13px 8.5%;
         border-left: 1px solid #0080cc;
         margin-left: 4.9%;
-        margin-top: 11px;
+        margin-top: 16px;
 
         &.c-career__itemcontent--spacing {
-            margin-top: 6px;
+            margin-top: 8px;
         }
     }
 
@@ -125,6 +125,7 @@
         letter-spacing: 0.38px;
         line-height: 1.7;
         color: #0080cc;
+        font-weight: 400;
     }
 
     .c-career__itemtext--spacing {
@@ -201,7 +202,7 @@
     }
 
     .c-career__benefitdetail {
-        margin-top: 15.5%;
+        margin-top: 17%;
     }
     
     .c-benefit__item {
@@ -209,18 +210,19 @@
         position: relative;
 
         .c-benefit__itemcontent {
-            line-height: 1.6;
+            line-height: 2;
             letter-spacing: 0.54px;
         }
 
         .c-benefit__itemnote {
             font-size: 1.6rem;
             font-weight: 300;
-            letter-spacing: 0.38px;
+            letter-spacing: 0.3px;
             color: #3c3c3c;
             margin-left: 20px;
-            margin-top: 14px;
-            margin-bottom: 5px;
+            margin-top: 8px;
+            margin-bottom: 6px;
+            line-height: 1.7;
 
             &.c-benefit__itemnote--lineheight {
                 line-height: 1.75;
@@ -233,7 +235,7 @@
     }
 
     .c-career__benefitage {
-        margin-top: 8%;
+        margin-top: 9%;
     }
 
 }

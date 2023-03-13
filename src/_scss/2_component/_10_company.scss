@@ -1,8 +1,8 @@
 .c-company {
-    padding-top: 6.6%;
+    padding-top: 7.6%;
 
     .c-company__wrapper {
-        margin-top: 39px;
+        margin-top: 50px;
     }
 
     .c-company__table,
@@ -24,11 +24,11 @@
         background: #f7f7f7;
         vertical-align: top;
         font-weight: 400;
-        padding: 19px 0 18px 17px;
+        padding: 19px 0 19px 17px;
     }
 
     .c-company__tabletext {
-        padding: 19px 27px 18px 17px;
+        padding: 19px 27px 19px 17px;
 
         &.c-company__tabletext--tabnsp {
             display: none;
@@ -39,13 +39,10 @@
 
     .c-company__tabletextbusiness {
         line-height: 1.9;
-        padding-top: 10px;
-        padding-bottom: 10px;
     }
 
     .c-company__tabletextbank {
         line-height: 1.7;
-        padding-top: 15px;
     }
 
     .c-company__tablerowarchitect {

@@ -1,0 +1,27 @@
+.c-animation {
+    position: relative;
+    opacity: 0;
+    transition: 0.3s ease-in;
+
+    &.active {
+        opacity: 1;
+
+        &.fade-bottom {
+            animation: fadeBottom 0.5s ease-in-out;
+        }
+    }
+}
+
+
+
+@keyframes fadeBottom {
+    0% {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

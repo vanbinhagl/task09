@@ -17,13 +17,13 @@
     }
 
     .c-interview__managercontent {
-        padding-top: 8.8%;
-        padding-bottom: 13.1%;
+        padding-top: 9.8%;
+        padding-bottom: 13.5%;
     }
 
     .c-interview__bodytop {
         display: flex;
-        margin-top: 27px;
+        margin-top: 37px;
     }
 
     .c-interview__bodytext {
@@ -39,6 +39,7 @@
             letter-spacing: 0.58px;
             max-width: 100%;
             margin-right: 0;
+            line-height: 1.9;
         }
     }
 
@@ -46,15 +47,16 @@
         font-size: 2.4rem;
         letter-spacing: 0.58px;
         font-weight: 500;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .c-interview__paragraph {
         line-height: 1.75;
+        font-weight: 300;
     }
 
     .c-manager__bodyimg {
-        margin-top: 6px;
+        margin-top: 3px;
     }
 
     .c-interview__bodybot {
@@ -65,11 +67,11 @@
         font-size: 2.2rem;
         font-weight: 500;
         letter-spacing: 0.53px;
-        margin-top: 11px;
+        margin-top: 25px;
     }
 
     .c-interview__footer {
-        margin-top: 34px;
+        margin-top: 47px;
     }
 
     .c-interview__footertitle {
@@ -78,7 +80,7 @@
 
     .c-interview__logoinfo {
         max-width: 880px;
-        margin: 21px auto 0;
+        margin: 33px auto 0;
         align-items: center;
         justify-content: space-between;
     }
