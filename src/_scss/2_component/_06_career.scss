@@ -174,7 +174,7 @@
             right: 0;
             top: 0;
             bottom: 0;
-            left: calc(((100% - 1200px) / 2) + 120px);
+            left: calc(((100% - min(100%, 1200px) ) / 2) + 10%);
             z-index: -1;
             background-color: #fdfbef;
         }
@@ -204,13 +204,17 @@
     .c-career__benefitdetail {
         margin-top: 17%;
     }
+
+    .c-benefit__list {
+        margin-top: 6px;
+    }
     
     .c-benefit__item {
         font-size: 1.8rem;
         position: relative;
 
         .c-benefit__itemcontent {
-            line-height: 2;
+            line-height: 1.7;
             letter-spacing: 0.54px;
         }
 
@@ -220,8 +224,8 @@
             letter-spacing: 0.3px;
             color: #3c3c3c;
             margin-left: 20px;
-            margin-top: 8px;
-            margin-bottom: 6px;
+            margin-top: 12px;
+            margin-bottom: 12px;
             line-height: 1.7;
 
             &.c-benefit__itemnote--lineheight {
@@ -232,10 +236,18 @@
         .c-benefit__itemdot {
             font-size: 1rem;
         }
+
+        &.c-benefit__itemvarious {
+            margin-top: 13px;
+        }
     }
 
     .c-career__benefitage {
-        margin-top: 9%;
+        margin-top: 10%;
+
+        .c-benefit__item {
+            margin-top: 11px;
+        }
     }
 
 }

@@ -39,6 +39,9 @@
         max-width: 886px;
         width: 80%;
         justify-content: space-between;
+        @include tab {
+            flex-direction: column-reverse;
+        }
     }
 
     .c-gnav {
@@ -90,6 +93,10 @@
         margin-top: 8px;
         max-width: 185px;
         flex-basis: auto;
+        @include tab {
+            margin-left: auto;
+            padding: 5px 20px 8px 22px;
+        }
     }
 
     .c-header__recruiticon {

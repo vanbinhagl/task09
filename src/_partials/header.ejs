@@ -10,15 +10,15 @@
         <img src="./assets/img/menu.svg" alt="menu icon open">
         <img src="./assets/img/close.svg" alt="menu icon close">
       </div>
-        <ul class="c-gnav">
-          <% if (typeof linklists != 'undefined') { %>
-            <% linklists.main && linklists.main.forEach(link => { %>
-              <li class="c-header__menuitem">
-                <a class="c-header__menulink"  href="<%= link.url %>"><%= link.title %></a>
-              </li>
-            <% }) %>
-          <% } %>
-        </ul>
+      <ul class="c-gnav">
+        <% if (typeof linklists != 'undefined') { %>
+          <% linklists.main && linklists.main.forEach(link => { %>
+            <li class="c-header__menuitem">
+              <a class="c-header__menulink"  href="<%= link.url %>"><%= link.title %></a>
+            </li>
+          <% }) %>
+        <% } %>
+      </ul>
       <a class="c-header__recruitbtn" href="#recruit">
         <img class="c-header__recruiticon" src="./assets/img/assignment.svg" alt="assignment icon">
         <span class="c-header__recruittxt" >募集要項</span>

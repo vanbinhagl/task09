@@ -20,7 +20,7 @@
         &::before {
             position: absolute;
             content: "";
-            left: calc(((100% - 1200px) / 2) + 120px);
+            left: calc(((100% - min(100%, 1200px)) / 2) + 10%);
             right: 0;
             top: 0;
             bottom: 0;
